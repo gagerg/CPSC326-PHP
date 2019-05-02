@@ -12,10 +12,10 @@ color:red;
 <h1>Form results:</h1>
 <?php
 $name = htmlspecialchars($_POST['name']);
-$emal = htmlspecialchars($_POST['email']);
+$email = htmlspecialchars($_POST['email']);
 $age = htmlspecialchars($_POST['age']);
 echo "<p>Name: $name</p>\n";
-if (filter_var($emal, FILTER_VALIDATE_EMAIL)) {
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 echo "<p>Email: $email</p>\n";
 } else {
 echo "<p class='warning'>Please enter a valid
